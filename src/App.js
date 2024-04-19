@@ -1,16 +1,17 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Contact from "./components/contact/Contact";
 import Navbar from "./components/Navbar";
+import Experience from "./components/Experience/Experience";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
     <div className="container">
       <Navbar />
-      <Home />
+      <Hero />
       <About />
+      <Experience />
       <Contact />
     </div>
   );
