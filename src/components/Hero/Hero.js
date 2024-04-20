@@ -1,20 +1,18 @@
 import React from "react";
-import { getImageUrl } from "../../utils";
+import heroImage from "../../assets/hero/heroImage.png"
 
 export const Hero = () => {
   return (
-    <section id="hero" className="hero py-5">
+    <section id="home" className="hero py-5">
       <div className="container">
         <div className="row align-items-center">
-          {/* Image on the left */}
           <div className="col-lg-6">
             <img
-              src={getImageUrl("hero/heroImage.png")}
+              src={heroImage}
               alt="Hero image of me"
               className="img-fluid"
             />
           </div>
-          {/* Content on the right */}
           <div className="col-lg-6 text-center text-lg-start">
             <h1 className="display-4">Hi, I'm Ada</h1>
             <p className="lead">

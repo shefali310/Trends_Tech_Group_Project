@@ -1,7 +1,15 @@
 import React from 'react';
-import skills from "../../data/skills.json";
-import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
+import css from "../../assets/skills/css.png"
+import figma from "../../assets/skills/figma.png"
+import graphql from "../../assets/skills/graphql.png"
+import html from "../../assets/skills/html.png"
+import mongodb from "../../assets/skills/mongodb.png"
+import node from "../../assets/skills/node.png"
+import react from "../../assets/skills/react.png"
+import google from "../../assets/history/google.png"
+import microsoft from "../../assets/history/microsoft.png"
+import netflix from "../../assets/history/netflix.png"
+
 
 function Experience() {
   return (
@@ -10,47 +18,122 @@ function Experience() {
       <div className="row">
         <div className="col-md-6">
           <h3>Skills</h3>
-          <div className="row">
-            {skills.map((skill, id) => {
-              return (
-                <div key={id} className="col-6 mb-3">
+          <div className="row">          
+                <div className="col-6 mb-3">
                   <div className="d-flex align-items-center">
                     <div className="me-2">
-                      <img src={getImageUrl(skill.imageSrc)} alt={skill.title} width="30" />
+                      <img src={css} alt={"css"} width="30" />
                     </div>
-                    <p>{skill.title}</p>
+                    <p>css</p>
                   </div>
                 </div>
-              );
-            })}
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={figma} alt={"figma"} width="30" />
+                    </div>
+                    <p>figma</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={graphql} alt={"graphql"} width="30" />
+                    </div>
+                    <p>graphql</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={html} alt={"html"} width="30" />
+                    </div>
+                    <p>html</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={mongodb} alt={"mongodb"} width="30" />
+                    </div>
+                    <p>mongodb</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={node} alt={"node"} width="30" />
+                    </div>
+                    <p>node</p>
+                  </div>
+                </div>
+                <div className="col-6 mb-3">
+                  <div className="d-flex align-items-center">
+                    <div className="me-2">
+                      <img src={react} alt={"react"} width="30" />
+                    </div>
+                    <p>react</p>
+                  </div>
+                </div>              
           </div>
         </div>
         <div className="col-md-6">
           <h3>History</h3>
-          <ul className="list-unstyled">
-            {history.map((historyItem, id) => {
-              return (
-                <li key={id} className="mb-4">
+          <ul className="list-unstyled">            
+                <li className="mb-4">
                   <div className="d-flex align-items-center mb-2">
                     <img
-                      src={getImageUrl(historyItem.imageSrc)}
-                      alt={`${historyItem.organisation} Logo`}
+                      src={google}
+                      alt={`Google Logo`}
                       className="me-2"
                       width="50"
                     />
                     <div>
-                      <h4>{`${historyItem.role}, ${historyItem.organisation}`}</h4>
-                      <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                      <h4>{`Software Developer, Google`}</h4>
+                      <p>{`Sept, 2022 - Present`}</p>
                     </div>
                   </div>
                   <ul className="list-unstyled">
-                    {historyItem.experiences.map((experience, id) => {
-                      return <li key={id}>{experience}</li>;
-                    })}
+                    <li>Worked on Google Maps</li>
+                    <li>Reduced load times by 50%</li>                 
                   </ul>
                 </li>
-              );
-            })}
+                <li className="mb-4">
+                  <div className="d-flex align-items-center mb-2">
+                    <img
+                      src={microsoft}
+                      alt={`microsoft Logo`}
+                      className="me-2"
+                      width="50"
+                    />
+                    <div>
+                      <h4>{`UI Designer, Microsoft`}</h4>
+                      <p>{`Aug, 2021 - Aug, 2022`}</p>
+                    </div>
+                  </div>
+                  <ul className="list-unstyled">
+                    <li>Worked on Windows 11</li>
+                    <li>Designed the control panel</li>                 
+                  </ul>
+                </li>
+                <li className="mb-4">
+                  <div className="d-flex align-items-center mb-2">
+                    <img
+                      src={netflix}
+                      alt={`netflix Logo`}
+                      className="me-2"
+                      width="50"
+                    />
+                    <div>
+                      <h4>{`SWE Intern, Netflix`}</h4>
+                      <p>{`Apr, 2020 - Jun, 2020`}</p>
+                    </div>
+                  </div>
+                  <ul className="list-unstyled">
+                    <li>Worked on component library</li>
+                    <li>Helped create UI components</li>                 
+                  </ul>
+                </li>
           </ul>
         </div>
       </div>

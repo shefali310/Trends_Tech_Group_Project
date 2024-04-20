@@ -1,5 +1,7 @@
 import React from 'react';
-import { getImageUrl } from "../utils";
+import aboutImage from "../assets/about/aboutImage.png"
+import cursorIcon from "../assets/about/cursorIcon.png"
+import serverIcon from "../assets/about/serverIcon.png"
 
 function About() {
   return (
@@ -8,7 +10,7 @@ function About() {
       <div className="row">
         <div className="col-md-6">
           <img
-            src={getImageUrl("about/aboutImage.png")}
+            src={aboutImage}
             alt="Me sitting with a laptop"
             className="img-fluid"
           />
@@ -16,7 +18,7 @@ function About() {
         <div className="col-md-6">
           <ul className="list-unstyled">
             <li className="mb-4">
-              <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" className="me-2" />
+              <img src={cursorIcon} alt="Cursor icon" className="me-2" />
               <div>
                 <h3>Frontend Developer</h3>
                 <p>
@@ -26,7 +28,7 @@ function About() {
               </div>
             </li>
             <li className="mb-4">
-              <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" className="me-2" />
+              <img src={serverIcon} alt="Server icon" className="me-2" />
               <div>
                 <h3>Backend Developer</h3>
                 <p>
@@ -36,7 +38,7 @@ function About() {
               </div>
             </li>
             <li>
-              <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" className="me-2" />
+              <img src={cursorIcon} alt="UI icon" className="me-2" />
               <div>
                 <h3>UI Designer</h3>
                 <p>
