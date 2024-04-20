@@ -3,19 +3,19 @@ import emailIcon from "../../assets/contact/emailIcon.png"
 import linkedinIcon from "../../assets/contact/linkedinIcon.png"
 import githubIcon from "../../assets/contact/githubIcon.png"
 
+// Created by Darshit Randhirbhai Patel (8817581)
 function Contact() {
   return (
-    <footer id="contact" className="container bg-dark text-white mt-5">
+    <footer id="contact" className="container-fluid bg-dark text-white">
       <div className="row">
-        <div className="col-md-6 text-center py-5">
-          <h2>Contact</h2>
-          <p className="lead">Feel free to reach out!</p>
+        <div className="col-12 text-center py-5">
+          <h2>Connect With Us</h2>
         </div>
-        <div className="col-md-6">
-          <ul className="list-unstyled text-md-end">
+        <div className="col-12 text-center pb-5">
+          <ul className="list-unstyled">
             <li className="mb-3">
               <img src={emailIcon} alt="Email icon" className="me-2" />
-              <a href="mailto:myemail@email.com">myemail@email.com</a>
+              <a href="mailto:contact@TechStacksolutions.com">contact@TechStacksolutions.com</a>
             </li>
             <li className="mb-3">
               <img
@@ -23,11 +23,11 @@ function Contact() {
                 alt="LinkedIn icon"
                 className="me-2"
               />
-              <a href="https://www.linkedin.com/myname">linkedin.com/myname</a>
+              <a href="https://www.linkedin.com/TechStacksolutions">linkedin.com/TechStacksolutions</a>
             </li>
             <li>
               <img src={githubIcon} alt="Github icon" className="me-2" />
-              <a href="https://www.github.com/myname">github.com/myname</a>
+              <a href="https://www.github.com/TechStacksolutions1">github.com/TechStacksolutions</a>
             </li>
           </ul>
         </div>

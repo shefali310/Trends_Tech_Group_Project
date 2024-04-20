@@ -1,5 +1,10 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+.bg_image{
+  background-image: url("/src/assets/bg_image.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
   text-align: center;
 }

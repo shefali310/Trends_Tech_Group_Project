@@ -6,18 +6,19 @@ import html from "../../assets/skills/html.png"
 import mongodb from "../../assets/skills/mongodb.png"
 import node from "../../assets/skills/node.png"
 import react from "../../assets/skills/react.png"
-import google from "../../assets/history/google.png"
-import microsoft from "../../assets/history/microsoft.png"
-import netflix from "../../assets/history/netflix.png"
+import Shefali from "../../assets/Shefali.jpeg"
+import Vashishth from "../../assets/Vashishth.jpeg"
+import Dilpreet from "../../assets/Dilpreet.jpeg"
+import Darshit from "../../assets/Darshit.jpeg"
 
-
+// Created by Dilpreet Singh (8871536)
 function Experience() {
   return (
-    <section id="experience" className="container mt-5">
-      <h2 className="text-center">Experience</h2>
-      <div className="row">
+    <section id="experience" className="container-fluid bg-dark text-white">
+      <h2 className="text-center pb-3">Our Team</h2>
+      <div className="row ms-5">
         <div className="col-md-6">
-          <h3>Skills</h3>
+          <h3 className='pb-3'>Skills</h3>
           <div className="row">          
                 <div className="col-6 mb-3">
                   <div className="d-flex align-items-center">
@@ -78,61 +79,30 @@ function Experience() {
           </div>
         </div>
         <div className="col-md-6">
-          <h3>History</h3>
           <ul className="list-unstyled">            
-                <li className="mb-4">
-                  <div className="d-flex align-items-center mb-2">
-                    <img
-                      src={google}
-                      alt={`Google Logo`}
-                      className="me-2"
-                      width="50"
-                    />
-                    <div>
-                      <h4>{`Software Developer, Google`}</h4>
-                      <p>{`Sept, 2022 - Present`}</p>
-                    </div>
+                <li className='mb-4 row'>                  
+                  <div className='col-2'>
+                  <img src={Vashishth} alt={"Vashishth"} className='img-fluid rounded'/>                    
                   </div>
-                  <ul className="list-unstyled">
-                    <li>Worked on Google Maps</li>
-                    <li>Reduced load times by 50%</li>                 
-                  </ul>
+                  <label className='ms-3 col-9 pt-4 h5'>Vashishth Gowani<p>CEO</p> </label>
                 </li>
-                <li className="mb-4">
-                  <div className="d-flex align-items-center mb-2">
-                    <img
-                      src={microsoft}
-                      alt={`microsoft Logo`}
-                      className="me-2"
-                      width="50"
-                    />
-                    <div>
-                      <h4>{`UI Designer, Microsoft`}</h4>
-                      <p>{`Aug, 2021 - Aug, 2022`}</p>
-                    </div>
+                <li className='mb-4 row'>
+                  <div className='col-2'>
+                  <img src={Shefali} alt={"Shefali"} className='img-fluid rounded'/>                    
                   </div>
-                  <ul className="list-unstyled">
-                    <li>Worked on Windows 11</li>
-                    <li>Designed the control panel</li>                 
-                  </ul>
+                  <label className='ms-3 col-9 pt-4 h5'>Shefali Panchal<p>CTO</p></label>
                 </li>
-                <li className="mb-4">
-                  <div className="d-flex align-items-center mb-2">
-                    <img
-                      src={netflix}
-                      alt={`netflix Logo`}
-                      className="me-2"
-                      width="50"
-                    />
-                    <div>
-                      <h4>{`SWE Intern, Netflix`}</h4>
-                      <p>{`Apr, 2020 - Jun, 2020`}</p>
-                    </div>
+                <li className='mb-4 row'>
+                  <div className='col-2'>
+                  <img src={Dilpreet} alt={"Dilpreet"} className='img-fluid rounded'/>                    
                   </div>
-                  <ul className="list-unstyled">
-                    <li>Worked on component library</li>
-                    <li>Helped create UI components</li>                 
-                  </ul>
+                  <label className='ms-3 col-9 pt-4 h5'>Dilpreet Singh<p>Senior Developer</p></label>
+                </li>
+                <li className='mb-4 row'>
+                  <div className='col-2'>
+                  <img src={Darshit} alt={"Darshit"} className='img-fluid rounded'/>                    
+                  </div>
+                  <label className='ms-3 col-9 pt-4 h5'>Darshit Patel<p>Junior Developer</p></label>
                 </li>
           </ul>
         </div>
